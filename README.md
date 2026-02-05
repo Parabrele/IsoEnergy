@@ -7,7 +7,7 @@ This repository contains the source code for the paper ["Cross-Modal Redundancy 
 This work investigates the geometry of vision-language embeddings, focusing on SAE-enabled concept-based decompositions. We formalize hypotheses about the data generative process behind vision-language embeddings as emerging from a shared latent variable model, and operationalize these hypotheses through sparse autoencoders with added regularization. Through systematic interventions, we show that our dictionary atoms can be categorized into shared and modality-specific using the simple IsoEnergy condition. We further demonstrate that shared atoms are necessary and sufficient for cross-modal retrieval, while modality-specific atoms encode relevant information for unimodal tasks but act as noise for cross-modal transfer.
 
 <div align="right">
-  <img src="images/overview.png" alt="Teaser Figure" width="60%", align="right", style="margin-left: 20px;"/>
+  <img src="images/overview.png" alt="Teaser Figure" width="70%", align="right", style="margin-left: 20px;"/>
 </div>
 
 **Figure 1.** On the left-hand side, this figure illustrates concept decomposition : $A = Z D$, where $A$ are latent CLIP embeddings, $Z$ are the corresponding codes, and $D$ is the dictionary. A visualisation of the latent space, as a PCA of $A$, shows the well known phenomenon of *modality gap* between image and text embeddings, colored in blue and orange respectively. The dictionary atoms $D$ are visualised through a UMAP, colored by whether they are shared or modality-specific and sized such that their area is proportional to their activation energy.
@@ -15,7 +15,7 @@ This work investigates the geometry of vision-language embeddings, focusing on S
 On the right-hand side, we show and example of systematic intervention : once in concept space, zero-out modality-specific atoms to obtain $\widetilde{A}$. These new embeddings are then visualised, illustrating how our method closes what is commonly referred to as the "modality gap". These new embeddings preserve cross-modal retrieval performance.
 
 <div align="left">
-  <img src="images/arithmetic.png" alt="Semantic Vector Arithmetic" width="40%", align="left", style="margin-right: 20px;"/>
+  <img src="images/arithmetic.png" alt="Semantic Vector Arithmetic" width="50%", align="left", style="margin-right: 20px;"/>
 </div>
 
 **Figure 2.** This figure illustrates how concept-based decompositions enable semantic vector arithmetic in multi-modal settings. Latent embeddings can be decomposed into atomic concepts. This decomposition makes it clear how standard vector arithmetic manipulates modality-specific concepts in cross-modal transfer cases, producing a chimera embedding that combines both text-only and image-only concepts. By restricting the arithmetic to shared concepts only, we obtain a much more semantically meaningful result.
