@@ -1,0 +1,5 @@
+# Install dependencies using the following commands in a virtual environment
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 # use latest stable cuda version for your system
+pip install transformers==4.57.1 datasets fancy-einsum tqdm matplotlib pillow ftfy regex pycocotools requests nnsight overcomplete umap-learn plotly kaleido POT wandb webdataset nest-asyncio
+pip install git+https://github.com/openai/CLIP.git
