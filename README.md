@@ -1,6 +1,6 @@
 # Cross-Modal Redundancy and the Geometry of Vision–Language Embeddings
 
-This repository contains the source code for the paper ["Cross-Modal Redundancy and the Geometry of Vision–Language Embeddings"](TODO:link_to_paper), published as a conference paper at ICLR 2026.
+This repository contains the source code for the paper ["Cross-Modal Redundancy and the Geometry of Vision–Language Embeddings"](https://arxiv.org/abs/2602.06218), published as a conference paper at ICLR 2026.
 
 ## Paper Overview
 
