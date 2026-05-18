@@ -43,5 +43,11 @@ You can find a list of requirements in `requirements.txt`. We recommend using a 
 If you find this work useful in your research and use concept-based decompositions for multi-modal embeddings, please consider citing our paper:
 
 ```bibtex
-TODO:bibtex_entry
+@inproceedings{
+dhimoila2026cross,
+title={Cross-Modal Redundancy and the Geometry of Vision{\textendash}Language Embeddings},
+author={Gr{\'e}goire Dhimo{\"i}la and Thomas Fel and Victor Boutin and Agustin Martin Picard},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+}
 ```
